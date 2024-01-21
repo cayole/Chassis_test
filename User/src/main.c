@@ -22,6 +22,8 @@ int main(void)
 	Can_SendQueueInit();
 	param_Init();
 
+	int i=0;
+
 	AnswerReset(); // 重启
 	OSInit();
 	OSTaskCreate(start_task, (void *)0, (OS_STK *)&START_TASK_STK[START_STK_SIZE - 1], START_TASK_PRIO); // 创建起始任务
