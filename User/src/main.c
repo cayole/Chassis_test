@@ -25,6 +25,7 @@ int main(void)
 	int i=0;
     int j=0;
 	int k=0;
+	int l=1;
 	AnswerReset(); // 重启
 	OSInit();
 	OSTaskCreate(start_task, (void *)0, (OS_STK *)&START_TASK_STK[START_STK_SIZE - 1], START_TASK_PRIO); // 创建起始任务
